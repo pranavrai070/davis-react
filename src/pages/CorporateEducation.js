@@ -1,12 +1,12 @@
 import React from 'react';
-import corporateEducation from '../assets/corporate_education.jpg';
+import corporateEducation from '../assets/hero4.jpg';
 import Education from '../components/Education';
 
  const CorporateEducation = () => {
   return (
     <>
     
-    <div className="relative h-screen">
+    <div className="relative h-96">
       <img
             src={corporateEducation}
             alt={`consulting`}

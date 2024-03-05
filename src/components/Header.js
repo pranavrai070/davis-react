@@ -30,11 +30,11 @@ import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
         </li>
         <li className="mr-6 mt-2">
           <Link
-            to="/corporate-education"
+            to="/corporate-training"
             activeClassName="underline"
             className="text-white text-lg hover:underline"
           >
-            Corporate Education
+            Corporate Training
           </Link>
         </li>
         <li className="mr-6">

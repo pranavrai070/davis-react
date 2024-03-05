@@ -44,15 +44,16 @@ const Contact = () => {
 
   return (
     <div className="mt-20 flex justify-center items-center h-screen" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="bg-white p-8 rounded-lg shadow-lg w-96 bg-opacity-10">
+      <div className="bg-transparent p-8 rounded-lg shadow-lg w-96">
         <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
+        <h2 className="text-2xl font-semibold mb-4">Let's Work Together</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+            <label className="block text-black-700 text-sm font-bold mb-2" htmlFor="name">
               Name
             </label>
             <input
-              className=" px-4 py-2 w-full"
+              className=" px-4 py-2 w-full  border-b border-black focus:outline-none focus:border-transparent focus:ring-0 opacity-40"
               type="text"
               id="name"
               name="name"
@@ -62,11 +63,11 @@ const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+            <label className="block text-black-700 text-sm font-bold mb-2" htmlFor="email">
               Email
             </label>
             <input
-              className="= px-4 py-2 w-full"
+              className="= px-4 py-2 w-full  border-b border-black focus:outline-none focus:border-transparent focus:ring-0 opacity-40"
               type="email"
               id="email"
               name="email"
@@ -76,11 +77,11 @@ const Contact = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+            <label className="block text-black-700 text-sm font-bold mb-2" htmlFor="message">
               Message
             </label>
             <textarea
-              className=" px-4 py-2 w-full"
+              className=" px-4 py-2 w-full  border-b border-black focus:outline-none focus:border-transparent focus:ring-0 opacity-40"
               id="message"
               name="message"
               value={formData.message}

@@ -9,38 +9,62 @@ import Icon6 from '../assets/services-icon-6.png';
 const cEducationData=[
     {
         id:1,
-        title:"Intro to Blockchain",
-        description:"From implementing business processes to effective and efficient business models we assist clients to plug the leaks and stop the inefficiencies. Use-cases, target market and overall due diligence are all areas of focus.",
+        title:"Blockchain Foundations",
+        description:" Introduction to Blockchain Technology and Its Core Principles",
         icon:Icon1
     },
     {
         id:2,
-        title:"Non Fungible Business",
-        description:"From implementing business processes to effective and efficient business models we assist clients to plug the leaks and stop the inefficiencies. Use-cases, target market and overall due diligence are all areas of focus.",
+        title:"Understanding Cryptography in Blockchain",
+        description:"Enhancing Security and Trust",
         icon:Icon2
     },
     {
         id:3,
-        title:"Regulatroy",
-        description:"From implementing business processes to effective and efficient business models we assist clients to plug the leaks and stop the inefficiencies. Use-cases, target market and overall due diligence are all areas of focus.",
+        title:"Decentralized Ledger Technology (DLT)",
+        description:"A Deep Dive into Its Mechanisms and Applications",
         icon:Icon3
     },
     {
         id:4,
-        title:"Digital Wallets",
-        description:"From implementing business processes to effective and efficient business models we assist clients to plug the leaks and stop the inefficiencies. Use-cases, target market and overall due diligence are all areas of focus.",
+        title:"Cryptocurrency 101",
+        description:"Basics of Digital Currencies and Their Economic Impact",
         icon:Icon4
     },
     {
         id:5,
-        title:"Storage and Security",
-        description:"From implementing business processes to effective and efficient business models we assist clients to plug the leaks and stop the inefficiencies. Use-cases, target market and overall due diligence are all areas of focus.",
+        title:"Mining Technologies and Strategies",
+        description:"How to Participate in the Cryptocurrency Ecosystem",
         icon:Icon5
     },
     {
         id:6,
-        title:"Execuitve Onboarding",
-        description:"From implementing business processes to effective and efficient business models we assist clients to plug the leaks and stop the inefficiencies. Use-cases, target market and overall due diligence are all areas of focus.",
+        title:"Blockchain for Business",
+        description:" Leveraging Technology for Organizational Advancement",
+        icon:Icon6
+    },
+    {
+        id:7,
+        title:"Digital Wallets Management",
+        description:"Secure Storage and Handling of Cryptocurrencies",
+        icon:Icon6
+    },
+    {
+        id:8,
+        title:"Cryptocurrency Transactions",
+        description:"Ensuring Security and Compliance in Digital Trades",
+        icon:Icon6
+    },
+    {
+        id:9,
+        title:"Market Analysis Techniques",
+        description:"Identifying Trends and Making Informed Decisions in the Crypto Market",
+        icon:Icon6
+    },
+    {
+        id:10,
+        title:"Regulatory Environment and Compliance",
+        description:"Navigating Legal Aspects of Blockchain and Cryptocurrency",
         icon:Icon6
     },
 ]

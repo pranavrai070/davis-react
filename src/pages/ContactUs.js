@@ -6,7 +6,7 @@ import Contact from '../components/Contact';
 const ContactUs = () => {
   return (
    <>
-     <div className="relative h-screen">
+     <div className="relative h-96">
       <img
             src={contactBanner}
             alt={`consulting`}

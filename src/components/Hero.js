@@ -25,7 +25,7 @@ const Hero = () => {
     <>
 
 
-    <div className="relative h-screen">
+<div className="relative h-96">
 
 {HeroData.map((hero, index) => (
         <Transition
@@ -45,7 +45,7 @@ const Hero = () => {
             alt={`Hero ${hero.id}`}
             className="object-cover w-full h-full"
           />
-          <div className="absolute left-0 top-1/2 transform -translate-y-1/2 p-4 bg-black bg-opacity-50 text-white">
+          <div className="absolute left-0 top-1/2 transform -translate-y-1/2 p-4 bg-opacity-50 text-white mt-10">
           <Link
         to="/consulting"
         className="inline-flex items-center px-4 py-2 bg-gray-400 text-white text-lg rounded-full hover:bg-gray-300 focus:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
@@ -53,7 +53,7 @@ const Hero = () => {
         <span>Explore Our Services</span>
         <ArrowOutwardIcon className="ml-2" />
       </Link>
-            <p className="text-3xl font-semibold">{hero.description}</p>
+            <p className="text-2xl font-semibold">{hero.description}</p>
             <div className="flex flex-wrap mt-2">
               {hero.tags.map((tag) => (
                 <span
@@ -63,7 +63,9 @@ const Hero = () => {
                   {tag}
                 </span>
               ))}
+              <div className="absolute bottom-0 left-0 bg-white h-0.5 transition-width duration-1000 ease-out ml-4" style={{width: index === currentHeroIndex ? '100%' : '0'}}></div>
             </div>
+            
           </div>
         </Transition>
       ))}

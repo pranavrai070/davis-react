@@ -7,25 +7,25 @@ import Hero4Img from '../assets/hero4.jpg';
 const HeroData=[
     {
      id:1,
-     description:"Bit coin is very good",
+     description:"Blockchain for Business: Leveraging Technology for Organizational Advancement",
      tags:['crypto','buisness'],
      image:Hero1Img
     },
     {
      id:2,
-     description:"BitCoin is worth investing",
+     description:"Digital Wallets Management: Secure Storage and Handling of Cryptocurrencies",
      tags:['crypto','idealogy'],
      image:Hero2Img
     },
     {
      id:3,
-     description:"There is no loss",
+     description:"Market Analysis Techniques: Identifying Trends and Making Informed Decisions in the Crypto Market",
      tags:['crypto','profit'],
      image:Hero3Img
     },
     {
      id:4,
-     description:"Bit Coin is Game",
+     description:"Cryptocurrency Transactions: Ensuring Security and Compliance in Digital Trades",
      tags:['crypto','games'],
      image:Hero4Img
     }

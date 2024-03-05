@@ -1,36 +1,90 @@
-import React from 'react';
+import React,{useState} from 'react';
 import cEducationData from '../data/cEducationData';
-import DoneIcon from '@mui/icons-material/Done';
+import Slider from "react-slick";
+import classes from "./Training.module.css";
 
  const Education = () => {
+
+  const [currentSlide, setCurrentSlide] = useState(0); // Initialize with the index of the first slide
+
+  const handleChangeSlide = (index) => {
+    setCurrentSlide(index);
+  };
+
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "120px",
+    slidesToShow: 3,
+    speed: 500,
+    arrows: false,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          infinite: true,
+          dots: true,
+          centerPadding: "100px",
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "100px",
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "100px",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "40px",
+        },
+      },
+    ],
+  };
   return (
-    <div className="flex flex-col md:flex-row mt-10 p-4 " style={{ fontFamily: 'Poppins, sans-serif' }}>
-      {/* Left Side */}
-      <div className="md:w-4/10 p-4">
-        <h2 className="text-4xl font-bold mb-4 " style={{ fontFamily: 'Poppins, sans-serif' }}>Corporate Education</h2>
-        <p className="mb-4">Some Descriotion about corporate Education</p>
-        <ul className="list-disc ml-0 list-none">
-          <li> <DoneIcon/>Item 1</li>
-          <li> <DoneIcon/>Item 2</li>
-          <li> <DoneIcon/>Item 3</li>
-          <li> <DoneIcon/>Item 4</li>
-        </ul>
+    <div className="flex flex-col  mt-10 p-4 " style={{ fontFamily: 'Poppins, sans-serif' }}>
+      {/* Top Side */}
+      <div className=" p-4">
+        <h2 className="text-4xl font-bold mb-4 " style={{ fontFamily: 'Poppins, sans-serif' }}>Corporate Training</h2>
+        <p className="mb-4">Corporate training courses in Blockchain and Cryptocurrency offered by CMP Global Consulting are crafted to enhance employees' grasp of foundational blockchain concepts. This encompasses decentralized ledger technology, cryptography, mining, and smart contracts. Our in-depth training equips professionals with the skills to manage digital wallets, execute transactions securely, and interpret market trends.</p>
+
       </div>
-      {/* Right Side */}
-      <div className="md:w-6/10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
-        {cEducationData.map(solution => (
-          <div className="w-full rounded-lg shadow-md bg-white overflow-hidden">
-      <div className="flex items-center p-4">
-        
-        <div>
-        <img className="w-8 h-8 mr-4 rounded-full" src={solution.icon} alt={solution.title} />
-          <h5 className="text-lg font-bold">{solution.title}</h5>
-          <p className="text-gray-700">{solution.description}</p>
-        </div>
-      </div>
-    </div>
-        ))}
-      </div>
+      {/* Bottom Side */}
+      <Slider {...settings} afterChange={handleChangeSlide}>
+          {cEducationData.map((item,index) => (
+            <div key={item.id} className={`w-64 ${classes.card}`}>
+              <div
+                className={`card p-6 rounded-lg text-center ${classes.cardContent}`}
+                style={{
+                  transform: index === currentSlide ? "scale(1.2)" : "scale(1)",
+                  backgroundColor: "white",
+                  margin: "20px",
+                  transition: "transform 0.1s ease-in-out"
+                }}
+              >
+                <img
+                  src={item.icon}
+                  alt={item.title}
+                  className={`mx-auto mb-4 ${classes.logo}`}
+                />
+                <h3 className={classes.heading}>{item.title}</h3>
+                <p className={classes.text}>{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
     </div>
   )
 }

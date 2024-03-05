@@ -4,26 +4,22 @@ import CryptoPayLogo from '../assets/CryptoPay.png';
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center gap-8 p-8 mt-10">
-      {/* Left Side */}
-      <div className="md:w-2/3">
-        <h2 className="text-4xl font-bold mb-4">About Us</h2>
-        <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum ipsum ac arcu efficitur, sit amet finibus dolor fringilla. Nullam nec venenatis nisl. Nam ultrices erat eget leo consequat, ut eleifend metus consectetur. Duis non pulvinar mauris. Nulla facilisi. Vivamus nec eros et tellus luctus posuere.</p>
-      </div>
-      {/* Right Side */}
-      <div className="md:w-2/3 grid grid-cols-1 gap-4">
-        {/* First Image Card */}
-        <div className="bg-white rounded-lg shadow-md overflow-hidden w-70">
-          <img src={BacLogo} alt="Bac Logo" className="w-32 h-auto mx-auto mt-4 mb-2" />
-          <p className="text-center text-gray-700 font-bold">Proud members of the Blockchain Association of Canada</p>
+    <div className='p-8 mt-10'>
+     <h2 className="text-4xl font-bold mb-4">About</h2>
+        <h2 className="text-2xl font-bold mb-4">Our Story</h2>
+    <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+        <div>
+        <p className="text-gray-700">The journey of CMP Global Consultants begins in a manner reminiscent of all great tales—a challenge in dire need of resolution. In 2022, Charles embarked on a mission fueled by his determination to demystify cryptocurrency education, making it readily available to the masses. </p>
+        <p className="text-gray-700">With the foundational belief that knowledge secures empowerment, Charles Max established CMP Global Consultants. The firm stands as a beacon of his commitment to rendering blockchain and cryptocurrency technologies approachable and advocating for their widespread adoption. At the heart of his endeavors lies a deep-seated passion for ensuring that cryptographic technologies become a universal asset. </p>
         </div>
-        {/* Second Image Card */}
-        <div className="bg-white rounded-lg shadow-md overflow-hidden w-70">
-          <img src={CryptoPayLogo} alt="CryptoPay Logo" className="w-32 h-auto mx-auto mt-4 mb-2" />
-          <p className="text-center text-gray-700 font-bold">One of our many happy and loyal clients. Crypto Pay, out of the USA, is now also in Canada</p>
+
+
+        <div>
+        <p className="text-gray-700">CMP Global Consultants is dedicated to offering tailor-made services that cater to the unique requirements of individuals, blockchain enterprises, and organizations keen on integrating this cutting-edge technology into their existing business frameworks. Our mission at CMP Global is to deliver personalized solutions that align perfectly with the distinct needs of each client, ensuring their seamless transition into the innovative realm of blockchain and cryptocurrency.</p>
         </div>
+
       </div>
-    </div>
+      </div>
   );
 }
 
