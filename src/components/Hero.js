@@ -25,7 +25,7 @@ const Hero = () => {
     <>
 
 
-<div className="relative h-96">
+<div className="relative h-screen mt-12">
 
 {HeroData.map((hero, index) => (
         <Transition
@@ -43,29 +43,10 @@ const Hero = () => {
           <img
             src={hero.image}
             alt={`Hero ${hero.id}`}
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-5/6"
           />
-          <div className="absolute left-0 top-1/2 transform -translate-y-1/2 p-4 bg-opacity-50 text-white mt-10">
-          <Link
-        to="/consulting"
-        className="inline-flex items-center px-4 py-2 bg-gray-400 text-white text-lg rounded-full hover:bg-gray-300 focus:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
-      >
-        <span>Explore Our Services</span>
-        <ArrowOutwardIcon className="ml-2" />
-      </Link>
-            <p className="text-2xl font-semibold">{hero.description}</p>
-            <div className="flex flex-wrap mt-2">
-              {hero.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="px-2 py-1 mr-2 mt-1 bg-gray-800 rounded-full text-xs font-semibold"
-                >
-                  {tag}
-                </span>
-              ))}
-              <div className="absolute bottom-0 left-0 bg-white h-0.5 transition-width duration-1000 ease-out ml-4" style={{width: index === currentHeroIndex ? '100%' : '0'}}></div>
-            </div>
-            
+          <div className="md:w-2/3 absolute left-0 top-1/3 transform  p-4 bg-opacity-50 text-white">
+            <p className="text-6xl font-bold">{hero.description}</p>
           </div>
         </Transition>
       ))}

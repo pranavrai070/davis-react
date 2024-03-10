@@ -6,15 +6,16 @@ import Consulting from "./pages/Consulting";
 import CorporateEducation from "./pages/CorporateEducation";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
+import Navbar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer";
 
 const App=()=>{
   return(
 
     <>
-   
+   <div className="bg-gradient-to-br from-gray-400 to-gray-100 min-h-screen">
     <Router>
-    <Header/>
+    <Navbar/>
       <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/consulting" element={<Consulting/>} />
@@ -24,6 +25,7 @@ const App=()=>{
       </Routes>
       <Footer/>
     </Router>
+    </div>
     </>
   )
 

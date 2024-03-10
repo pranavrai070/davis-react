@@ -2,7 +2,8 @@ import React from 'react';
 import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
 import News from '../components/News';
-import Contact from '../components/Contact';
+import Portfolio from '../components/Portfolio';
+import BlockChainService from '../components/BlockChainService';
 
 
 const Home = () => {
@@ -10,8 +11,9 @@ const Home = () => {
     <div>
     <Hero/>
     <AboutUs/>
+    <BlockChainService/>
+    <Portfolio/>
     <News/>
-    <Contact/>
     </div>
     
   )

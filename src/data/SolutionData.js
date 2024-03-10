@@ -1,9 +1,9 @@
-import Icon1 from '../assets/services-icon-1.png';
-import Icon2 from '../assets/services-icon-2.png';
-import Icon3 from '../assets/services-icon-3.png';
-import Icon4 from '../assets/services-icon-4.png';
-import Icon5 from '../assets/services-icon-5.png';
-import Icon6 from '../assets/services-icon-6.png';
+import Icon1 from '../assets/Web3Consultation.png';
+import Icon2 from '../assets/RegulatoryTaxService.png';
+import Icon3 from '../assets/CryptoAnalysis.png';
+import Icon4 from '../assets/ColdStorageSecurity.png';
+import Icon5 from '../assets/CryptoPaymentIntegration.png';
+import Icon6 from '../assets/Strategyworkshop.png';
 
 
 const SolutionData=[

@@ -6,14 +6,14 @@
     justify-content: center;
     gap: 4px;
     padding: 10px 27px;
-    border: 4px solid;
+    border: 2px solid;
     border-color: transparent;
     font-size: 16px;
     background-color: inherit;
-    border-radius: 100px;
-    font-weight: 600;
-    color: #22C55E;
-    box-shadow: 0 0 0 2px #22C55E;
+    border-radius: 50px;
+    font-weight: 400;
+    color: #3180e8;
+    box-shadow: 0 0 0 2px #3180e8;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
@@ -22,13 +22,13 @@
   .animated-button svg {
     position: absolute;
     width: 24px;
-    fill: greenyellow;
+    fill: #3180e8;
     z-index: 9;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
   }
   
   .animated-button .arr-1 {
-    right: 16px;
+    right: 10px;
   }
   
   .animated-button .arr-2 {
@@ -42,7 +42,7 @@
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    background-color: greenyellow;
+    background-color: #3180e8;
     border-radius: 50%;
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
@@ -83,8 +83,9 @@
   }
   
   .animated-button:hover .circle {
-    width: 220px;
+    width: 300px;
     height: 220px;
     opacity: 1;
   }
+  
   

@@ -20,7 +20,7 @@ import DoneIcon from '@mui/icons-material/Done';
   };
 
   return (
-<div className="flex flex-col mt-10 p-4 " style={{ fontFamily: 'Poppins, sans-serif' }}>
+<div className="flex flex-col mt-0 p-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
   {/* Our Services */}
   <div className="p-4">
     <h2 className="text-4xl font-bold mb-4">Our Services</h2>
@@ -28,15 +28,15 @@ import DoneIcon from '@mui/icons-material/Done';
   </div>
 
   {/* Cards */}
-  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 p-4">
+  <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 p-4">
     {SolutionData.map(solution => (
-      <div className="w-full rounded-lg shadow-md bg-white overflow-hidden p-6 transform transition-transform hover:scale-105">
+      <div className="w-full bg-transparent border rounded-lg border-black overflow-hidden p-6 transform transition-transform hover:scale-105">
         <div className="flex items-center p-4">
           <div>
-            <img className="w-12 h-12 mr-4 rounded-full mb-2" src={solution.icon} alt={solution.title} />
+            <img className="w-12 h-12 mr-4 mb-2" src={solution.icon} alt={solution.title} />
             <h5 className="text-lg font-bold">{solution.title}</h5>
-            <p className="text-sm text-gray-700 mt-2">{solution.description}</p>
-            <p className="text-sm text-gray-700 mt-2">{solution.description2}</p>
+            <p className="text-xs text-gray-700 mt-2">{solution.description}</p>
+            <p className="text-xs text-gray-700 mt-2">{solution.description2}</p>
           </div>
         </div>
       </div>

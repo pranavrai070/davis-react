@@ -1,9 +1,13 @@
-import Icon1 from '../assets/services-icon-1.png';
-import Icon2 from '../assets/services-icon-2.png';
-import Icon3 from '../assets/services-icon-3.png';
-import Icon4 from '../assets/services-icon-4.png';
-import Icon5 from '../assets/services-icon-5.png';
-import Icon6 from '../assets/services-icon-6.png';
+import Icon1 from '../assets/Web3Consultation.png';
+import Icon2 from '../assets/Cryptography.png';
+import Icon3 from '../assets/LedgerTechnology.png';
+import Icon4 from '../assets/Cryptocurrency.png';
+import Icon5 from '../assets/MiningTechnologies.png';
+import Icon6 from '../assets/BlockchainforBusiness.png';
+import Icon7 from '../assets/DigitalWalletsManagement.png';
+import Icon8 from '../assets/CryptocurrencyTransactions.png';
+import Icon9 from '../assets/MarketAnalysisTechniques.png';
+import Icon10 from '../assets/RegulatoryEnvironment.png';
 
 
 const cEducationData=[
@@ -47,25 +51,25 @@ const cEducationData=[
         id:7,
         title:"Digital Wallets Management",
         description:"Secure Storage and Handling of Cryptocurrencies",
-        icon:Icon6
+        icon:Icon7
     },
     {
         id:8,
         title:"Cryptocurrency Transactions",
         description:"Ensuring Security and Compliance in Digital Trades",
-        icon:Icon6
+        icon:Icon8
     },
     {
         id:9,
         title:"Market Analysis Techniques",
         description:"Identifying Trends and Making Informed Decisions in the Crypto Market",
-        icon:Icon6
+        icon:Icon9
     },
     {
         id:10,
         title:"Regulatory Environment and Compliance",
         description:"Navigating Legal Aspects of Blockchain and Cryptocurrency",
-        icon:Icon6
+        icon:Icon10
     },
 ]
 

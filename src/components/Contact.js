@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import backgroundImage from '../assets/background.jpg'; // Import your background image
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
-
+import phoneSvg from '../assets/icons/phoneSvg.svg';
+import emailSvg from '../assets/icons/emailSvg.svg';
+import PhoneInput from 'react-phone-number-input';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -43,64 +45,70 @@ const Contact = () => {
   };
 
   return (
-    <div className="mt-20 flex justify-center items-center h-screen" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="bg-transparent p-8 rounded-lg shadow-lg w-96">
-        <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-        <h2 className="text-2xl font-semibold mb-4">Let's Work Together</h2>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label className="block text-black-700 text-sm font-bold mb-2" htmlFor="name">
-              Name
-            </label>
-            <input
-              className=" px-4 py-2 w-full  border-b border-black focus:outline-none focus:border-transparent focus:ring-0 opacity-40"
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-black-700 text-sm font-bold mb-2" htmlFor="email">
-              Email
-            </label>
-            <input
-              className="= px-4 py-2 w-full  border-b border-black focus:outline-none focus:border-transparent focus:ring-0 opacity-40"
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <label className="block text-black-700 text-sm font-bold mb-2" htmlFor="message">
-              Message
-            </label>
-            <textarea
-              className=" px-4 py-2 w-full  border-b border-black focus:outline-none focus:border-transparent focus:ring-0 opacity-40"
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              rows={4}
-              required
-              style={{ resize: 'none' }}
-            ></textarea>
-          </div>
-          <button
-            className="inline-flex items-center px-4 py-2 bg-gray-400 text-white text-lg rounded-full hover:bg-gray-300 focus:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
-            type="submit"
-          >
-            Submit
-            <ArrowOutwardIcon className="ml-2" />
-          </button>
-        </form>
+    <div className="flex flex-col md:flex-row p-4 mt-6">
+    <form className="w-full md:w-7/12 lg:w-3/5 xl:w-2/3 px-4">
+      <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
+      <h2 className="text-2xl font-semibold mb-4">Let's Work Together</h2>
+      <div className="flex flex-wrap mb-4">
+        <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+          <label className="block text-sm font-medium text-gray-700">Name</label>
+          <input
+            type="text"
+            className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div className="w-full md:w-1/2 px-2">
+          <label className="block text-sm font-medium text-gray-700">Company (Optional)</label>
+          <input
+            type="text"
+            className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            placeholder="Enter your company name"
+          />
+        </div>
       </div>
+      <div className="flex flex-wrap mb-4">
+        <div className="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+          <label className="block text-sm font-medium text-gray-700">Phone (Optional)</label>
+          <input
+            type="text"
+            className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        
+        <div className="w-full md:w-1/2 px-2">
+          <label className="block text-sm font-medium text-gray-700">Email</label>
+          <input
+            type="email"
+            className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            placeholder="Enter your email address"
+          />
+        </div>
+      </div>
+      <div className="mb-4 ml-2">
+        <label className="block text-sm font-medium text-gray-700">Message</label>
+        <textarea
+          className="mt-1 p-2 block w-full border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 h-32"
+          placeholder="Enter your message"
+        ></textarea>
+      </div>
+      <button className=" ml-2 bg-gradient-to-r from-gray-400 to-gray-800 text-white px-8 py-3 rounded-lg text-lg font-bold shadow-lg hover:from-gray-600 hover:to-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-100">
+            Submit
+          </button>
+    </form>
+    <div className="w-full md:w-5/12 lg:w-2/5 xl:w-1/3 px-4">
+      <h2 className="text-2xl font-semibold mb-4">Talk to us anywhere</h2>
+        <p className="mb-2 flex items-center mt-6">
+        <img src={phoneSvg} alt="phone icon svg" className="h-4 w-4 mr-2" />
+        <span>+123456789</span>
+      </p>
+      <p className="mb-2 flex items-center mt-0">
+        <img src={emailSvg} alt="email icon svg" className="h-4 w-4 mr-2" />
+        <span>example@example.com</span>
+      </p>
     </div>
+  </div>
   );
 }
 

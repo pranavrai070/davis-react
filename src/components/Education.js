@@ -54,7 +54,7 @@ import classes from "./Training.module.css";
     ],
   };
   return (
-    <div className="flex flex-col  mt-10 p-4 " style={{ fontFamily: 'Poppins, sans-serif' }}>
+    <div className="flex flex-col  mt-0 p-4 " style={{ fontFamily: 'Poppins, sans-serif' }}>
       {/* Top Side */}
       <div className=" p-4">
         <h2 className="text-4xl font-bold mb-4 " style={{ fontFamily: 'Poppins, sans-serif' }}>Corporate Training</h2>
