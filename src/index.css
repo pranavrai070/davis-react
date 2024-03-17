@@ -20,6 +20,66 @@
     text-align: center;
 }
 
+.mainBigAppDiv{
+  font-family: 'Montserrat-classic', sans-serif;
+}
+
+.headingText{
+  transform: translateX(26%);
+}
+
+@media (min-width:1300px) {
+  .head-text{
+    font-size: 50px;
+    line-height: 4rem;
+  }
+
+  .faqMoveUp{
+    transform: translateY(-20%);
+  }
+
+  .lg-moveup-About{
+    transform: translateY(-10%);
+  }
+
+  .lg-moveup-consulting{
+    transform: translateY(-10%);
+  }
+
+  .lg-moveup-cptraining{
+    transform: translateY(-9%);
+  }
+
+  .lg-moveup-contact{
+    transform: translateY(-17%);
+  }
+
+  .aboutusImg{
+    width: 500px;
+    height:500px;
+  }
+
+  .aboutUstext{
+    font-size: 20px;
+  }
+}
+
+@media (max-width:768px) {
+  .head-text{
+    font-size: 32px;
+  }
+
+  .headingText{
+    transform: translateX(-2%);
+  }
+
+  .border-small{
+    border: none;
+  }
+}
+
+
+
 .customDot:hover,
 .customDot.active {
     background-color: rgb(135, 206, 235);

@@ -64,13 +64,7 @@ const cEducationData=[
         title:"Market Analysis Techniques",
         description:"Identifying Trends and Making Informed Decisions in the Crypto Market",
         icon:Icon9
-    },
-    {
-        id:10,
-        title:"Regulatory Environment and Compliance",
-        description:"Navigating Legal Aspects of Blockchain and Cryptocurrency",
-        icon:Icon10
-    },
+    }
 ]
 
 export default cEducationData;

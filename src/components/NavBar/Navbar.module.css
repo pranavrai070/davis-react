@@ -1,6 +1,6 @@
 
 .navBarIMg{
-    width:200px;
+    width:180px;
     cursor:pointer;
     margin-left:2rem;
   
@@ -8,9 +8,9 @@
   
   @media only screen and (max-device-width:767px){
     .navBarIMg{
-      width: 44px;
-      margin-top: -2rem;
-      margin-left: -1rem;
+      width: 180px;
+      margin-top: -0.5rem;
+      margin-left: -.5rem;
     }
   
   }

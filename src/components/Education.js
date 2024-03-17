@@ -54,25 +54,19 @@ import classes from "./Training.module.css";
     ],
   };
   return (
-    <div className="flex flex-col  mt-0 p-4 " style={{ fontFamily: 'Poppins, sans-serif' }}>
+    <div className="flex flex-col  mt-0 p-4 lg-moveup-cptraining">
       {/* Top Side */}
-      <div className=" p-4">
-        <h2 className="text-4xl font-bold mb-4 " style={{ fontFamily: 'Poppins, sans-serif' }}>Corporate Training</h2>
+      <div className=" text-center p-4">
+        <h2 className="text-4xl font mb-4 ">Corporate Training</h2>
         <p className="mb-4">Corporate training courses in Blockchain and Cryptocurrency offered by CMP Global Consulting are crafted to enhance employees' grasp of foundational blockchain concepts. This encompasses decentralized ledger technology, cryptography, mining, and smart contracts. Our in-depth training equips professionals with the skills to manage digital wallets, execute transactions securely, and interpret market trends.</p>
 
       </div>
       {/* Bottom Side */}
-      <Slider {...settings} afterChange={handleChangeSlide}>
+      <div className="text-center grid grid-cols-1 lg:grid-cols-3 gap-3 p-4">
           {cEducationData.map((item,index) => (
-            <div key={item.id} className={`w-64 ${classes.card}`}>
+            <div key={item.id} className={`w-84 ${classes.card} transform transition-transform hover:scale-105`}>
               <div
-                className={`card p-6 rounded-lg text-center ${classes.cardContent}`}
-                style={{
-                  transform: index === currentSlide ? "scale(1.2)" : "scale(1)",
-                  backgroundColor: "white",
-                  margin: "20px",
-                  transition: "transform 0.1s ease-in-out"
-                }}
+                className={`p-2 bg-transparent border rounded-lg border-black text-center ${classes.cardContent}`}
               >
                 <img
                   src={item.icon}
@@ -84,7 +78,7 @@ import classes from "./Training.module.css";
               </div>
             </div>
           ))}
-        </Slider>
+          </div>
     </div>
   )
 }

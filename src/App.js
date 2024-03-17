@@ -7,13 +7,15 @@ import CorporateEducation from "./pages/CorporateEducation";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Navbar from "./components/NavBar/NavBar";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsOfUse from "./components/TermsOfUse";
 import Footer from "./components/Footer";
 
 const App=()=>{
   return(
 
     <>
-   <div className="bg-gradient-to-br from-gray-400 to-gray-100 min-h-screen">
+   <div className="bg-gradient-to-br from-gray-400 to-gray-100 min-h-screen mainBigAppDiv">
     <Router>
     <Navbar/>
       <Routes>
@@ -21,6 +23,8 @@ const App=()=>{
       <Route path="/consulting" element={<Consulting/>} />
       <Route path="/corporate-training" element={<CorporateEducation/>} />
       <Route path="/contact" element={<ContactUs/>} />
+      <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
+      <Route path="/termsofuse" element={<TermsOfUse/>} />
       <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer/>

@@ -4,15 +4,17 @@ import AboutUs from '../components/AboutUs';
 import News from '../components/News';
 import Portfolio from '../components/Portfolio';
 import BlockChainService from '../components/BlockChainService';
+import Partner from '../components/Partner';
 
 
 const Home = () => {
   return (
-    <div>
+    <div >
     <Hero/>
     <AboutUs/>
     <BlockChainService/>
     <Portfolio/>
+    <Partner/>
     <News/>
     </div>
     

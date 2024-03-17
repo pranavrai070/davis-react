@@ -37,7 +37,7 @@ const SolutionData=[
     },
     {
         id:5,
-        title:"Crypto Payment Integration & Consulting",
+        title:"Crypto Payment Integration",
         description:"Are you prepared to transform your business by adopting the next generation of financial technology? CMP Global excels in facilitating the integration of cryptocurrency payments, opening doors to fresh revenue opportunities and positioning you at the forefront of the digital economy. Step into the future of finance with us today.",
         description2:"",
         icon:Icon5

@@ -1,9 +1,10 @@
+/* eslint-disable*/
 import React, { useState } from 'react';
-import backgroundImage from '../assets/background.jpg'; // Import your background image
-import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+// import backgroundImage from '../assets/background.jpg'; // Import your background image
+// import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import phoneSvg from '../assets/icons/phoneSvg.svg';
 import emailSvg from '../assets/icons/emailSvg.svg';
-import PhoneInput from 'react-phone-number-input';
+// import PhoneInput from 'react-phone-number-input';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row p-4 mt-6">
+    <div className="flex flex-col md:flex-row p-4 mt-6 lg-moveup-contact">
     <form className="w-full md:w-7/12 lg:w-3/5 xl:w-2/3 px-4">
       <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
       <h2 className="text-2xl font-semibold mb-4">Let's Work Together</h2>
@@ -105,7 +106,7 @@ const Contact = () => {
       </p>
       <p className="mb-2 flex items-center mt-0">
         <img src={emailSvg} alt="email icon svg" className="h-4 w-4 mr-2" />
-        <span>example@example.com</span>
+        <span>info@cmpglobalconsultants.com</span>
       </p>
     </div>
   </div>

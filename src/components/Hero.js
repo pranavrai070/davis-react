@@ -1,7 +1,6 @@
+/* eslint-disable*/
 import { useState, useEffect } from 'react';
 import HeroData from '../data/HeroData';
-import {Link} from 'react-router-dom';
-import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 
 
 import { Transition } from '@headlessui/react';
@@ -25,7 +24,7 @@ const Hero = () => {
     <>
 
 
-<div className="relative h-screen mt-12">
+<div className="relative h-screen mt-12 text-center">
 
 {HeroData.map((hero, index) => (
         <Transition
@@ -45,9 +44,11 @@ const Hero = () => {
             alt={`Hero ${hero.id}`}
             className="object-cover w-full h-5/6"
           />
-          <div className="md:w-2/3 absolute left-0 top-1/3 transform  p-4 bg-opacity-50 text-white">
-            <p className="text-6xl font-bold">{hero.description}</p>
+          
+          <div className="md:w-2/3 absolute top-1/3 transform translate-x-20 p-4 bg-opacity-50 text-white headingText">
+            <p className="text-4xl head-text font">{hero.description}</p>
           </div>
+         
         </Transition>
       ))}
     </div>
