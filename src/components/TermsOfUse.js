@@ -3,10 +3,10 @@ import React from 'react';
 const TermsOfUse = () => {
   return (
     <div className="mx-auto p-8 bg-white shadow-lg rounded-lg">
-      <h1 className="text-3xl font-bold mb-6 text-center text-gray-800 mt-10">
+      <h1 className="text-3xl font-bold mb-1 text-center text-gray-800 mt-10">
         Terms of Use for CMP Global Consultants
       </h1>
-      <p className="text-gray-800 mb-6 text-center">Last Updated: 27.07.2023</p>
+      <p className="text-gray-800 mb-2 text-center">Last Updated: 27.07.2023</p>
       <div className="bg-gray-100 p-4 rounded-lg mb-6">
         <h2 className="text-xl font-bold mb-2 text-gray-800">Welcome</h2>
         <p className="text-gray-800 leading-relaxed">
@@ -63,12 +63,6 @@ const TermsOfUse = () => {
         <h2 className="text-xl font-bold mb-2 text-gray-800">7. Modifications</h2>
         <p className="text-gray-800 leading-relaxed">
           CMP Global Consultants may revise these Terms of Use for its website at any time without notice. By using this website you are agreeing to be bound by the then-current version of these Terms of Use.
-        </p>
-      </div>
-      <div className="bg-gray-100 p-4 rounded-lg mb-6">
-        <h2 className="text-xl font-bold mb-2 text-gray-800">8. Governing Law</h2>
-        <p className="text-gray-800 leading-relaxed">
-          These terms and conditions are governed by and construed in accordance with the laws of United Kingdom and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.
         </p>
       </div>
       <div className="bg-gray-100 p-4 rounded-lg mb-6">

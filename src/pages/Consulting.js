@@ -1,8 +1,7 @@
 import React from 'react';
-import consultingImg from '../assets/hero3.jpg';
+import consultingImg from '../assets/hero3.png';
 import Solutions from '../components/Solutions';
 import Products from '../components/Products';
-import News from '../components/News';
 import Banner from '../components/Banner';
 
 
@@ -21,7 +20,6 @@ const Consulting = () => {
     </div>
     <Solutions/>
     <Products />
-    <News/>
     <Banner/>
 
     </>

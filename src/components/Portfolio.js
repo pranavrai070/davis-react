@@ -85,7 +85,7 @@ const Portfolio = () => {
         </ul>
         <div className="mt-10">
           <button className="bg-gradient-to-r from-gray-400 to-gray-800 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-lg hover:from-gray-600 hover:to-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-100">
-            Schedule a FREE Call
+            Schedule a Meeting
           </button>
         </div>
       </div>

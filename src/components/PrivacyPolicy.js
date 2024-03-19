@@ -3,10 +3,10 @@ import React from 'react';
 const PrivacyPolicy = () => {
   return (
     <div className="mx-auto p-8 bg-white shadow-lg rounded-lg">
-      <h1 className="text-3xl font-bold mb-6 text-center text-gray-800 mt-10">
+      <h1 className="text-3xl font-bold mb-1 text-center text-gray-800 mt-10">
         Privacy Policy for CMP Global Consultants
       </h1>
-      <p className="text-gray-800 mb-6 text-center">Last Updated: 27.07.2023</p>
+      <p className="text-gray-800 mb-2 text-center">Last Updated: 27.07.2023</p>
       <div className="bg-gray-100 p-4 rounded-lg mb-6">
         <h2 className="text-xl font-bold mb-2 text-gray-800">1. Information We Collect</h2>
         <p className="text-gray-800 leading-relaxed">

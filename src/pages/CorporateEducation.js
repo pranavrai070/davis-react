@@ -1,5 +1,5 @@
 import React from 'react';
-import corporateEducation from '../assets/hero4.jpg';
+import corporateEducation from '../assets/hero4.png';
 import Education from '../components/Education';
 import FAQ from '../components/FAQ';
 
