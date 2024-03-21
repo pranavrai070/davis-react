@@ -46,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row p-4 mt-6 lg-moveup-contact">
+    <div className="flex flex-col md:flex-row p-4 mt-0 lg-moveup-contact">
     <form className="w-full md:w-7/12 lg:w-3/5 xl:w-2/3 px-4">
       <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
       <h2 className="text-2xl font-semibold mb-4">Let's Work Together</h2>
@@ -98,12 +98,8 @@ const Contact = () => {
             Submit
           </button>
     </form>
-    <div className="w-full md:w-5/12 lg:w-2/5 xl:w-1/3 px-4">
-      <h2 className="text-2xl font-semibold mb-4">Talk to us anywhere</h2>
-        <p className="mb-2 flex items-center mt-6">
-        <img src={phoneSvg} alt="phone icon svg" className="h-4 w-4 mr-2" />
-        <span>+123456789</span>
-      </p>
+    <div className="w-full md:w-5/12 lg:w-2/5 xl:w-1/3 px-4 ml-2">
+      <h2 className="text-2xl font-semibold mb-4 mt-4">Talk to us anywhere</h2>
       <p className="mb-2 flex items-center mt-0">
         <img src={emailSvg} alt="email icon svg" className="h-4 w-4 mr-2" />
         <span>info@cmpglobalconsultants.com</span>

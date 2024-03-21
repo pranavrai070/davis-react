@@ -9,16 +9,16 @@ const Products = () => {
     <div className="p-4">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-4xl font-semibold text-gray-900 sm:text-4xl">
+          <h2 className="text-4xl font-semibold text-gray-900 productHeading">
           Flexible Solutions to{" "}
             <span className="text-blue-700">Support Your Evolving Needs</span>{" "}
           </h2>
-          <p className="mt-4 text-3xl text-gray-600">
+          <p className="mt-4 text-3xl text-gray-600 productSubHeading">
             Choose the plan that suits your needs
           </p>
         </div>
 
-        <div className="mt-20 grid grid-cols-1 gap-y-16 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-12">
+        <div className="mt-20 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-8 sm:gap-y-12 productSolutions">
           {/* Explorer Package */}
           <div className="translate-y-0 bg-transparent border border-black shadow-md  transform transition-transform hover:scale-105">
             <div className="px-6 py-8">

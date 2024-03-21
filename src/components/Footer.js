@@ -22,7 +22,7 @@ const Footer = () => {
   };
   return (
     <footer
-      className="bg-gray-100 dark:bg-gray-800 text-white p-8 mt-10"
+      className="bg-gray-800 text-white p-8 mt-10"
       style={{ fontFamily: "Poppins, sans-serif" }}
     >
       <div className="container mx-auto px-4">
@@ -83,10 +83,9 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="text-center ml-4 col-span-1 md:col-span-1 lg:col-span-1">
+          <div className="text-center ml-4 col-span-1 md:col-span-1 lg:col-span-1 contactUsFooter">
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-            <p>Email: info@cmpglobalconsultants.com</p>
-            <p>Phone: +1234567890</p>
+            <p className="translate-y-16 emailForMobileFooter">Email: info@cmpglobalconsultants.com</p>
           </div>
         </div>
       </div>

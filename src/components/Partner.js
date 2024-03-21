@@ -50,11 +50,11 @@ const Partner = () => {
   };
 
   return (
-    <div className="mt-3 px-10 text-center">
+    <div className="mt-10 px-10 text-center">
       <Slider {...settings}>
         {partnerData.map((item) => (
-          <div className="p-8">
-            <img src={partnerImg} className="w-20 h-20" alt="partner" />
+          <div className="w-16 h-30 p-6">
+            <img src={item.imageurl} className="w-full h-full" alt="partner" />
           </div>
         ))}
       </Slider>

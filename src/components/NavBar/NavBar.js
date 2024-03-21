@@ -6,7 +6,7 @@ import HamburgerMenu from "react-hamburger-menu";
 import classes from "./Navbar.module.css";
 import { useNavigate } from "react-router-dom";
 
-import cmpLogo from "../../assets/cmpLogo.jpeg";
+import cmpLogo from "../../assets/cmpLogo.png";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -116,10 +116,10 @@ export default function Navbar() {
                   menuClicked={toggleSidebar}
                   width={29}
                   height={21}
-                  strokeWidth={4}
+                  strokeWidth={5}
                   rotate={0}
                   color="linear-gradient(to right, #3A4DF5, #18BDE3)"
-                  borderRadius={0}
+                  borderRadius={10}
                   animationDuration={0.3}
                 />
               </HamburgerWrapper>
@@ -143,7 +143,7 @@ export default function Navbar() {
               >
                 <Link
                   activeClass="active"
-                  style={{ padding: "10px 15px", fontSize: "18px" }}
+                  style={{ padding: "10px 15px", fontSize: "18px",color:"white" }}
                   to="home"
                   spy={true}
                   smooth={true}
@@ -174,7 +174,7 @@ export default function Navbar() {
               >
                 <Link
                   activeClass="active"
-                  style={{ padding: "10px 15px", fontSize: "18px" }}
+                  style={{ padding: "10px 15px", fontSize: "18px" ,color:"white"}}
                   to="solution"
                   spy={true}
                   smooth={true}
@@ -205,7 +205,7 @@ export default function Navbar() {
               >
                 <Link
                   activeClass="active"
-                  style={{ padding: "0", fontSize: "18px" }}
+                  style={{ padding: "0", fontSize: "18px" ,color:"white"}}
                   to="blog"
                   spy={true}
                   smooth={true}
@@ -216,6 +216,7 @@ export default function Navbar() {
                     scrollToTop();
                     toggleSidebar();
                   }}
+                  className={classes.Links}
                 >
                   Corporate Training
                 </Link>
@@ -235,7 +236,7 @@ export default function Navbar() {
               >
                 <Link
                   activeClass="active"
-                  style={{ padding: "10px 15px", fontSize: "28px" }}
+                  style={{ padding: "12px 15px", fontSize: "28px" }}
                   to="contact"
                   spy={true}
                   smooth={true}
@@ -247,7 +248,7 @@ export default function Navbar() {
                     toggleSidebar();
                   }}
                 >
-                  <button className=" -translate-y-2 bg-gradient-to-r from-gray-400 to-gray-800 text-white px-4 py-1 md:px-6 md:py-2 rounded-lg text-sm md:text-lg font-semibold shadow-lg hover:from-gray-600 hover:to-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-100">
+                  <button className="-translate-y-3 bg-gradient-to-r from-gray-400 to-gray-800 text-white px-4 py-1 md:px-6 md:py-2 rounded-lg text-lg md:text-lg font-semibold shadow-lg hover:from-gray-600 hover:to-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-100">
                     Get in Touch
                   </button>
                 </Link>
@@ -273,9 +274,9 @@ const Wrapper = styled.nav`
 const BorderBox = styled.div`
   width: 100%;
   ${"" /* max-width: 3840px; */}
-  height: 65px;
+  height: 70px;
   box-sizing: border-box;
-  background: #fff;
+  background: black;
   // backdrop-filter: blur(10px);
   box-shadow: 0px 8px 37px 0px rgba(0, 0, 0, 0.18);
 
@@ -301,8 +302,9 @@ const HamburgerWrapper = styled.div`
 
 const UlWrapper = styled.ul`
   display: flex;
-  height:3rem;
-  color:black
+  height:1rem;
+  color:black;
+  margin-top:-0.2rem;
   
   
 
@@ -330,16 +332,16 @@ const UlWrapper = styled.ul`
     align-items: center;
     justify-content: center;
     height: 60vh;
-    width: 45vw;
+    width: 60vw;
     position: fixed;
     top: 0;
     left: 0;
-    // background: linear-gradient(86.83deg, #3955F4 16.99%, #1BB7E5 98.42%);
-    background-color: #fff; /* Add the desired background color here */
+    background-color: black; /* Add the desired background color here */
     backdrop-filter: blur(10px);
-    opacity: 1;
+    opacity: 0.9;
     padding: 0;
     margin: 0;
+    border-bottom-right-radius:20px;
     list-style-type: none;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
@@ -351,12 +353,12 @@ const UlWrapper = styled.ul`
 
     /* Increase the padding for the sidebar buttons on mobile screens */
     li {
-      padding: 5px 0;
+      padding: 10px 0;
     }
 
     .navLink {
-      font-size: 10px; /* Adjust the font size to increase the button text size */
-      padding: 13px 1px; /* Adjust the padding to increase the button size */
+      font-size: 20px; /* Adjust the font size to increase the button text size */
+      padding: 20px 1px; /* Adjust the padding to increase the button size */
     }
   }
 

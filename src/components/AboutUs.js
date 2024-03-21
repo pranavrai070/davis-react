@@ -20,7 +20,7 @@ const AboutUs = () => {
 
 
       {/* Right Side */}
-      <div className="md:w-5/12 transform transition-transform hover:scale-105">
+      <div className="md:w-5/12 transform transition-transform hover:scale-105 aboutUsImgDiv">
         {/* First Image Card */}
           <img src={aboutImg} alt="Bac Logo" className="w-96 h-96 mx-auto mt-10 mb-0 rounded-lg aboutusImg" />
       </div>
