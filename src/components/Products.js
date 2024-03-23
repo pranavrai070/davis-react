@@ -9,11 +9,11 @@ const Products = () => {
     <div className="p-4">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-4xl font-semibold text-gray-900 productHeading">
+          <h2 className="text-4xl font-semibold text-gray-900 productHeading portFolioHeadingMobileFont">
           Flexible Solutions to{" "}
             <span className="text-blue-700">Support Your Evolving Needs</span>{" "}
           </h2>
-          <p className="mt-4 text-3xl text-gray-600 productSubHeading">
+          <p className="mt-4 text-3xl text-gray-600 productSubHeading portFolioSubHeadingMobileFont">
             Choose the plan that suits your needs
           </p>
         </div>

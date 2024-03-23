@@ -13,11 +13,11 @@ const Portfolio = () => {
   return (
     <div className="px-4 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="font-semibold text-black-900 text-3xl">
+        <h2 className="font-semibold text-black-900 text-3xl portFolioHeadingMobileFont">
           Building a highly <span className="text-blue-600">PROFITABLE</span>{" "}
           crypto portfolio is a skill. Let us help you.
         </h2>
-        <p className="mt-4 font-semibold text-lg text-black-600">
+        <p className="mt-4 font-semibold text-lg text-black-600 portFolioSubHeadingMobileFont">
           Discover your best next steps for building the wealth you've always
           desired with a 1:1 Strategy Session Today.
         </p>
@@ -40,7 +40,7 @@ const Portfolio = () => {
                 />
               </svg>
             </span>
-            <p className="ml-3 text-lg text-black-600">
+            <p className="ml-3 text-lg text-black-600 portFolioPointsMobileFont">
               Gain full clarity on the core portfolio performance opportunities
               and most pressing challenges facing you and your investments.
             </p>
@@ -63,7 +63,7 @@ const Portfolio = () => {
                 />
               </svg>
             </span>
-            <p className="ml-3 text-lg text-black-600">
+            <p className="ml-3 text-lg text-black-600 portFolioPointsMobileFont">
               Connect with top-rated crypto education and coaching provider for
               new and current investors.
             </p>
@@ -86,7 +86,7 @@ const Portfolio = () => {
                 />
               </svg>
             </span>
-            <p className="ml-3 text-lg text-black-600">
+            <p className="ml-3 text-lg text-black-600 portFolioPointsMobileFont">
               Get a detailed roadmap to elevate your investing to the next
               level.
             </p>

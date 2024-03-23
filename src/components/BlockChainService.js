@@ -51,7 +51,7 @@ const serviceData = [
 const BlockChainService = () => {
   return (
     <div className="mb-8 p-8">
-    <h1 className="text-3xl font-semibold mb-4">What We Do?</h1>
+    <h1 className="text-3xl font-semibold mb-4 serviceHeadingMobileFont">What We Do?</h1>
     <div className="justify-center grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-3 p-0">
       {serviceData.map((service) => (
         <div key={service.id} className="bg-gray-300 my-4 p-6 rounded-lg shadow-lg BlockChainServiceCard">

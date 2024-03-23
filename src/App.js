@@ -1,15 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import  Home  from "./pages/Home";
 import  ContactUs from "./pages/ContactUs";
 import Consulting from "./pages/Consulting";
 import CorporateEducation from "./pages/CorporateEducation";
 import NotFound from "./pages/NotFound";
-import Header from "./components/Header";
 import Navbar from "./components/NavBar/NavBar";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsOfUse from "./components/TermsOfUse";
 import Footer from "./components/Footer";
+
 
 const App=()=>{
   return(

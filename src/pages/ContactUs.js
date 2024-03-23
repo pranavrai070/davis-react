@@ -10,7 +10,7 @@ const ContactUs = () => {
       <img
             src={contactBanner}
             alt={`consulting`}
-            className="object-cover w-full h-5/6"
+            className="object-cover w-full h-5/6 borderRadiusImg"
           />
     </div>
     <Contact/>

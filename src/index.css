@@ -21,6 +21,27 @@
     text-align: center;
 }
 
+.lg-moveup-cptraining{
+  transform: translateY(-9%);
+}
+
+.lg-moveup-consulting{
+  transform: translateY(-7%);
+}
+
+/* .heroMobileHeight{
+  border-radius: 1000px;
+} */
+
+.borderRadiusImg{
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.heroImageDiv{
+  border-radius: 30px;
+}
+
 .lg-moveup-contact{
   transform: translateY(-34%);
   margin-bottom: -10rem;
@@ -35,12 +56,24 @@
   background-color: black;
 }
 
+.heroImageDiv{
+    height: 31rem;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .mainBigAppDiv{
   font-family: 'Montserrat-classic', sans-serif;
 }
 
 .headingText{
   transform: translateX(26%);
+}
+
+.lg-moveup-About{
+  transform: translateY(12%);
+  margin-bottom:5rem;
 }
 
 @media (min-width:1300px) {
@@ -54,7 +87,8 @@
   }
 
   .lg-moveup-About{
-    transform: translateY(-10%);
+    transform: translateY(15%);
+    margin-bottom:8rem;
   }
 
   .lg-moveup-consulting{
@@ -79,12 +113,22 @@
     font-size: 20px;
   }
 
+  .heroImageDiv{
+    height: 53rem;
+}
+
+.bigScreenPadding{
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
 }
 
 @media (max-width:768px) {
   
   .heroMobileHeight{
     height:24rem;
+    border-radius: 50px;
   }
   
   .emailForMobileFooter{
@@ -106,9 +150,13 @@
   }
 
   .headingText{
-    transform: translate(-2%,-20%);
-    margin-left: 0.7rem;
+    transform: translate(1%,-20%);
+    margin-left: 1rem;
     padding:10px;
+  }
+
+  .headingTextTraining{
+    transform: translateX(10%);
   }
 
   .border-small{
@@ -142,6 +190,62 @@
   .lg-moveup-contact{
     transform: translateY(-18%);
   }
+
+  .heroImageDiv{
+    height: 24rem;
+}
+
+.smallScreenFont{
+  font-size: 10px;
+  padding: 4px;
+}
+
+.smallScreenWidth{
+  padding: 10;
+  width:95%;
+}
+
+  .lg-moveup-About{
+  transform: translateY(5%);
+}
+
+.lg-moveup-cptraining{
+  transform: translateY(-2%);
+}
+
+.lg-moveup-consulting{
+  transform: translateY(-1%);
+}
+
+.portFolioHeadingMobileFont{
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.portFolioSubHeadingMobileFont{
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.portFolioPointsMobileFont{
+  font-size: 11px;
+  line-height: 15px;
+}
+
+.trainingHeadingMobileFont{
+  font-size:30px;
+}
+
+.trainingSubHeadingMobileFont{
+  font-size:15px;
+}
+
+.serviceHeadingMobileFont{
+  font-size: 30px;
+}
+.bannerFontMobile{
+  font-size: 10px;
+}
 }
 
 

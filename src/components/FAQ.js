@@ -17,7 +17,7 @@ const FAQ = () => {
 
   return (
     <div className='faqMoveUp'>
-      <h1 className="text-2xl text-center font-semibold">FAQs</h1>
+      <h1 className="text-2xl text-center font-semibold">Frequently asked questions (FAQs)</h1>
 
       <div className='p-8'>
         {FAQdata.map((item, index) => (

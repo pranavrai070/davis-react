@@ -24,8 +24,8 @@ import DoneIcon from '@mui/icons-material/Done';
 <div className="flex flex-col mt-0 p-4 lg-moveup-consulting" >
   {/* Our Services */}
   <div className="p-4">
-    <h2 className="text-4xl font-semibold mb-4">Our Services</h2>
-    <p className="mb-4">Our seasoned team of professionals is equipped to offer you the insightful guidance necessary to optimize your investment strategies. Catering to both newcomers and veteran investors within the crypto sphere, we are here to assist you in crafting a portfolio that aligns seamlessly with your specific objectives and aspirations.</p>
+    <h2 className="text-4xl font-semibold mb-4 trainingHeadingMobileFont">Our Services</h2>
+    <p className="mb-4 trainingSubHeadingMobileFont">Our seasoned team of professionals is equipped to offer you the insightful guidance necessary to optimize your investment strategies. Catering to both newcomers and veteran investors within the crypto sphere, we are here to assist you in crafting a portfolio that aligns seamlessly with your specific objectives and aspirations.</p>
   </div>
 
   {/* Cards */}
