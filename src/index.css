@@ -22,11 +22,13 @@
 }
 
 .lg-moveup-cptraining{
-  transform: translateY(-9%);
+  transform: translateY(6%);
+  margin-bottom: 4rem;
 }
 
 .lg-moveup-consulting{
-  transform: translateY(-7%);
+  transform: translateY(2%);
+  margin-bottom: 2rem;
 }
 
 /* .heroMobileHeight{
@@ -82,9 +84,9 @@
     line-height: 4rem;
   }
 
-  .faqMoveUp{
-    transform: translateY(-20%);
-  }
+  /* .faqMoveUp{
+    transform: translateY(0);
+  } */
 
   .lg-moveup-About{
     transform: translateY(15%);
@@ -92,11 +94,12 @@
   }
 
   .lg-moveup-consulting{
-    transform: translateY(-10%);
+    transform: translateY(5%);
   }
 
   .lg-moveup-cptraining{
-    transform: translateY(-9%);
+    transform: translateY(6%);
+    margin-bottom: 5rem;
   }
 
   .lg-moveup-contact{
@@ -210,11 +213,13 @@
 }
 
 .lg-moveup-cptraining{
-  transform: translateY(-2%);
+  transform: translateY(2%);
+  margin-bottom: 3rem;
 }
 
 .lg-moveup-consulting{
-  transform: translateY(-1%);
+  transform: translateY(1%);
+  margin-bottom: 3rem;
 }
 
 .portFolioHeadingMobileFont{
@@ -230,6 +235,8 @@
 .portFolioPointsMobileFont{
   font-size: 11px;
   line-height: 15px;
+  text-align: start;
+  padding-right: 0.5rem;
 }
 
 .trainingHeadingMobileFont{

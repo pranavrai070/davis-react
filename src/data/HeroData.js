@@ -1,6 +1,6 @@
 import Hero1Img from '../assets/hero1.png';
 // import Hero2Img from '../assets/hero2.jpg';
-import Hero3Img from '../assets/hero3.png';
+import Hero3Img from '../assets/hero3.jpeg';
 import Hero4Img from '../assets/hero4.png';
 
 

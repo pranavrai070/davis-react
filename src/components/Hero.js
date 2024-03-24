@@ -47,7 +47,7 @@ const Hero = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-       <div className='bg-black bg-opacity-60 rounded-lg text-center w-7/12 smallScreenWidth'>
+       <div className={`${hero.id!==2 ? 'bg-black bg-opacity-60 rounded-lg':null} text-center w-7/12 smallScreenWidth`}>
         <p className='text-white text-4xl p-10 bigScreenPadding smallScreenFont'>{hero.description}</p>
         </div>
       </div>
