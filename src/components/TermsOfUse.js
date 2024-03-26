@@ -3,7 +3,7 @@ import React from 'react';
 const TermsOfUse = () => {
   return (
     <div className="mx-auto p-8 bg-white shadow-lg rounded-lg">
-      <h1 className="text-3xl font-bold mb-1 text-center text-gray-800 mt-10">
+      <h1 className="text-3xl font-bold mb-1 text-center text-gray-800 mt-16">
         Terms of Use for CMP Global Consultants
       </h1>
       <p className="text-gray-800 mb-2 text-center">Last Updated: 27.07.2023</p>

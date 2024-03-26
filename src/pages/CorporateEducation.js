@@ -1,5 +1,5 @@
 import React from 'react';
-import corporateEducation from '../assets/hero4.png';
+import corporateEducation from '../assets/hero4.jpg';
 import Education from '../components/Education';
 import FAQ from '../components/FAQ';
 
@@ -15,7 +15,7 @@ import FAQ from '../components/FAQ';
           backgroundRepeat: 'no-repeat'
         }}
       >
-       <div className='bg-black bg-opacity-60 rounded-lg text-center w-7/12 smallScreenWidth'>
+       <div className='text-center w-7/12 smallScreenWidth'>
         <p className='text-white text-4xl p-10 bigScreenPadding smallScreenFont'>Empower Your Team with Cutting-Edge Blockchain Skills</p>
         </div>
       </div>

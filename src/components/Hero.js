@@ -4,7 +4,6 @@ import HeroData from '../data/HeroData';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Hero1Img from '../assets/hero1.png';
 
 
 
@@ -47,7 +46,7 @@ const Hero = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-       <div className={`${hero.id!==2 ? 'bg-black bg-opacity-60 rounded-lg':null} text-center w-7/12 smallScreenWidth`}>
+       <div className='text-center w-7/12 smallScreenWidth'>
         <p className='text-white text-4xl p-10 bigScreenPadding smallScreenFont'>{hero.description}</p>
         </div>
       </div>

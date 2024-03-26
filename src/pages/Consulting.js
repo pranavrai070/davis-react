@@ -1,5 +1,5 @@
 import React from 'react';
-import consultingImg from '../assets/hero3.jpeg';
+import consultingImg from '../assets/hero3.jpg';
 import Solutions from '../components/Solutions';
 import Products from '../components/Products';
 import Banner from '../components/Banner';

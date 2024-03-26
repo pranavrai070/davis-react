@@ -25,7 +25,7 @@ const Products = () => {
               <h3 className="text-center text-3xl font-semibold text-gray-900">
                 Explorer 
               </h3>
-              <p className=" text-center font-semibold mt-2 text-2xl text-blue-700">€9,900</p>
+              {/* <p className=" text-center font-semibold mt-2 text-2xl text-blue-700">€9,900</p> */}
               <div className="mt-4">
                 <div className="flex items-center">
                   <Check />
@@ -76,7 +76,7 @@ const Products = () => {
                 <h3 className=" text-center text-3xl font-semibold text-gray-900">
                   Innovator 
                 </h3>
-                <p className="text-center mt-2 font-semibold text-2xl text-blue-700">€14,900</p>
+                {/* <p className="text-center mt-2 font-semibold text-2xl text-blue-700">€14,900</p> */}
                 <div className="mt-4">
                   <div className=" mt-4 flex items-center">
                     <Check />
@@ -126,7 +126,7 @@ const Products = () => {
               <h3 className=" text-center text-3xl font-semibold text-gray-900">
                 Visionary 
               </h3>
-              <p className=" text-center mt-2 font-semibold text-2xl text-blue-700">Upon Quotation</p>
+              {/* <p className=" text-center mt-2 font-semibold text-2xl text-blue-700">Upon Quotation</p> */}
               <div className="mt-4">
                 <div className="mt-4 flex items-center">
                   <Check />
