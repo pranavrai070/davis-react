@@ -47,7 +47,8 @@ const Hero = () => {
         }}
       >
        <div className='text-center w-7/12 smallScreenWidth'>
-        <p className='text-white text-4xl p-10 bigScreenPadding smallScreenFont'>{hero.description}</p>
+        <p className='text-white text-4xl p-10 bigScreenPadding smallScreenFont' style={{display:`${hero.id===3?'none':null}`}}>{hero.description}</p>
+        {hero.id===3 && <p className='text-white text-4xl p-10 bigScreenPadding smallScreenFont'>Empower Your Team with <br className="desktop-br" /> Cutting-Edge Blockchain Skills</p>}
         </div>
       </div>
     );

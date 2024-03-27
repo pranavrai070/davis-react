@@ -16,7 +16,7 @@ import FAQ from '../components/FAQ';
         }}
       >
        <div className='text-center w-7/12 smallScreenWidth'>
-        <p className='text-white text-4xl p-10 bigScreenPadding smallScreenFont'>Empower Your Team with Cutting-Edge Blockchain Skills</p>
+        <p className='text-white text-4xl p-10 bigScreenPadding smallScreenFont'>Empower Your Team with <br className="desktop-br" /> Cutting-Edge Blockchain Skills</p>
         </div>
       </div>
     <Education/>

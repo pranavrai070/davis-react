@@ -40,9 +40,6 @@
   border-bottom-left-radius: 30px; */
 }
 
-.heroImageDiv{
-  /* border-radius: 30px; */
-}
 
 .lg-moveup-contact{
   transform: translateY(-34%);
@@ -59,7 +56,7 @@
 }
 
 .heroImageDiv{
-    height: 31rem;
+    height: 27rem;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -117,7 +114,7 @@
   }
 
   .heroImageDiv{
-    height: 53rem;
+    height: 42rem;
 }
 
 .bigScreenPadding{
@@ -178,8 +175,25 @@
     margin-top: 2rem;
   }
 
-  .educationIntro{
+  /* .educationIntro{
     padding: 0;
+  } */
+
+  .mobileCpTrainingFlex{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .cpHeadPara1{
+    width: 100%;
+    text-align: left;
+  }
+
+  .cpHeadPara2{
+    width: 100%;
+    margin: 0;
+    text-align: left;
   }
 
   .BlockChainServiceCard{
@@ -195,7 +209,10 @@
   }
 
   .heroImageDiv{
-    height: 17rem;
+    height: 8rem;
+    /* transform: translateY(50%); */
+    margin-top: 4rem;
+    z-index: 1000;
 }
 
 .smallScreenFont{
@@ -209,7 +226,8 @@
 }
 
   .lg-moveup-About{
-  transform: translateY(5%);
+  transform: translateY(4%);
+  margin-bottom: 1rem;
 }
 
 .lg-moveup-cptraining{
@@ -218,8 +236,8 @@
 }
 
 .lg-moveup-consulting{
-  transform: translateY(1%);
-  margin-bottom: 3rem;
+  transform: translateY(0.5%);
+  margin-bottom: 1rem;
 }
 
 .portFolioHeadingMobileFont{
@@ -241,6 +259,7 @@
 
 .trainingHeadingMobileFont{
   font-size:30px;
+  text-align: left;
 }
 
 .trainingSubHeadingMobileFont{
@@ -253,6 +272,11 @@
 .bannerFontMobile{
   font-size: 10px;
 }
+
+.desktop-br{
+  display: none;
+}
+
 }
 
 

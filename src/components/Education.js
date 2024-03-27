@@ -56,9 +56,16 @@ import classes from "./Training.module.css";
   return (
     <div className="flex flex-col p-4 lg-moveup-cptraining">
       {/* Top Side */}
-      <div className=" text-center p-4 mx-4 rounded-lg">
+      <div className=" p-4 rounded-lg">
         <h2 className="text-4xl font-semibold font mb-4 trainingHeadingMobileFont">Corporate <span className="text-blue-700">Training</span>{" "}</h2>
-        <p className="mb-4 px-20 educationIntro trainingSubHeadingMobileFont">Corporate training courses in Blockchain and Cryptocurrency offered by CMP Global Consulting are crafted to enhance employees' grasp of foundational blockchain concepts. This encompasses decentralized ledger technology, cryptography, mining, and smart contracts. Our in-depth training equips professionals with the skills to manage digital wallets, execute transactions securely, and interpret market trends.</p>
+
+        <div className='flex justify-start mobileCpTrainingFlex'>
+        
+        <p className="mb-4 w-1/2 educationIntro trainingSubHeadingMobileFont text-left cpHeadPara1">Corporate training courses in Blockchain and Cryptocurrency offered by CMP Global Consulting are crafted to enhance employees' grasp of foundational blockchain concepts. This encompasses decentralized ledger technology,cryptography, mining, and smart contracts.  </p>
+
+        <p className='ml-8 text-left w-1/2 trainingSubHeadingMobileFont cpHeadPara2'> Our in-depth training equips professionals with the skills to manage digital wallets, execute transactions securely, and interpret market trends.</p>
+        </div>
+        
 
       </div>
       {/* Bottom Side */}

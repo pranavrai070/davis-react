@@ -109,7 +109,7 @@ export default function Navbar() {
               <HamburgerWrapper
                 className="pointer"
                 onClick={toggleSidebar}
-                style={{ position: "absolute", top: ".5rem", right: "1.5rem" }}
+                style={{ position: "absolute", top: ".8rem", right: "1.5rem" }}
               >
                 <HamburgerMenu
                   isOpen={sidebarOpen}
@@ -330,11 +330,11 @@ const UlWrapper = styled.ul`
     /* Additional styles for mobile screens */
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 60vh;
-    width: 60vw;
+    justify-content: start;
+    height: 100vh;
+    width:100vw;
     position: fixed;
-    top: 0;
+    top: 8%;
     left: 0;
     background-color: black; /* Add the desired background color here */
     backdrop-filter: blur(10px);
@@ -343,12 +343,12 @@ const UlWrapper = styled.ul`
     margin: 0;
     border-bottom-right-radius:20px;
     list-style-type: none;
-    transform: translateX(-100%);
+    transform: translateY(100%);
     transition: transform 0.3s ease-in-out;
     
 
     &.open {
-      transform: translateX(0%);
+      transform: translateY(0%);
     }
 
     /* Increase the padding for the sidebar buttons on mobile screens */
