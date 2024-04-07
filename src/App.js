@@ -10,6 +10,9 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsOfUse from "./components/TermsOfUse";
 import Footer from "./components/Footer";
 
+// my information
+import Developer from "./components/Developer";
+
 
 const App=()=>{
   return(
@@ -25,6 +28,7 @@ const App=()=>{
       <Route path="/contact" element={<ContactUs/>} />
       <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
       <Route path="/termsofuse" element={<TermsOfUse/>} />
+      <Route path="/developer" element={<Developer/>} />
       <Route path="*" element={<NotFound/>} />
       </Routes>
       <Footer/>
